@@ -1,0 +1,18 @@
+//Shape Calculation-Perimeter
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#define PI 3.141
+
+int main() {
+    int a,b,c,d,e,f,g;
+    scanf("%d%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f,&g);
+    printf("Perimeter of Square:%d",4*a);
+    printf("\nPerimeter of Rectangle:%d",2*(b+c));
+    printf("\nPerimeter of Circle:%.2f",(float)(2*PI*d));
+    printf("\nPerimeter of Triangle:%d",e+f+g);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
