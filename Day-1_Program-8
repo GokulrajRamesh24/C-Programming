@@ -1,0 +1,21 @@
+//Math Performance
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    float i;
+    int l,m,n;
+    scanf("%f",&i);
+    scanf("%d%d%d",&l,&m,&n);
+    int a=floor(i),b=ceil(i);
+    int c=sqrt(l),d=pow(m,n);
+    printf("%d\n%d\n",(int)a,(int)b);
+    printf("%d\n%d",c,d);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
