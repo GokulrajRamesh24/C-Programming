@@ -1,0 +1,20 @@
+//Profit Calculator
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x,y,z;
+    scanf("%d%d%d",&x,&y,&z);
+    float p;
+    p=(float)((x*y)-(x*z))-100;
+    printf("Number of copies sold:%d\n",x);
+    printf("Cost of each copy:%d\n",y);
+    printf("Cost spent by agency on each newspaper:%d\n",z);
+    printf("The profit obtained is Rs.%.2f",p);
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
