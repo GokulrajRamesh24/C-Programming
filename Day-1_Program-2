@@ -1,0 +1,13 @@
+//Execute the String Statement
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char c[100];
+    scanf("%[^\n]s",c);
+    printf("Hai %s!\tWelcome to Programming Language...",c);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
