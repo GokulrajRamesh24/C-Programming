@@ -1,0 +1,22 @@
+//Dept Repay
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    float d,e,f,g;
+    d=(a*b*c)/100;
+    e=a+d;
+    f=d*2/100;
+    g=e-f; 
+    printf("%.2f\n%.2f\n%.2f\n%.2f",d,e,f,(float)g);
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
