@@ -1,0 +1,21 @@
+//Alice in Wonderland
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,i,j,a=0;
+    scanf("%d",&j);
+    n=j;
+    while(j>0)
+    {
+        i=j%10;
+        a+=i;
+        j=j/10;
+    }
+    printf("Bird said:%d\n",n);
+    printf("Alice must go in path-%d",a);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
