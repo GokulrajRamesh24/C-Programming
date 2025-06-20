@@ -1,0 +1,22 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int a,b,c,d,e,f,m,n,o;
+    scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+    m=a*b;n=c*d+e*f;
+    if(m>=n)
+    {  
+        if(c*d<m-e*f || f*e<m-d*c)
+        printf("Raj can fix both painting");
+    }
+    else
+        printf("Raj cannot fix both painting");
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
