@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,m=0,q;
+    scanf("%d",&n);
+    int j=n;
+    while(n>0)
+    {
+        m+=n%10;
+        n/=10;
+    }
+    (j%m==0)?printf("Harshad Number"):printf("Not Harshad Number");
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
