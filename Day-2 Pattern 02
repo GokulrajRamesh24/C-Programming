@@ -1,0 +1,35 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int n,i,j;
+    scanf("%d",&n);
+    if(n<10)
+    {
+        i=1;
+        while(i<=n)
+        {
+            for(j=1;j<=i;j++)
+            {
+                printf("%d",j);     
+            }
+            for(j=i-1;j>=1;j--)
+            {
+                printf("%d",j); 
+            }
+            i++;
+            printf("\n");
+        }
+    }
+    else
+    {
+        printf("Invalid Input");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
