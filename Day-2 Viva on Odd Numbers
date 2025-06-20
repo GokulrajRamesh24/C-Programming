@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a[100],i,p=0,t=0;
+    float count=0;
+    printf("Enter the numbers\n");
+    for(i=0;i<100;i++)
+    {
+        t++;
+        scanf("%d",&a[i]);
+        if(a[i]>=0)
+        {
+            if(a[i]%2!=0)
+            {
+                count++;
+                p++;
+            }
+            else if(a[i]%2==0)
+            {
+                count=count-0.5;
+            }
+        }
+        else
+        {
+            return 0;
+        }
+        if(p==3)
+        {
+            break;
+        }
+        
+    }
+    for(i=0;i<t;i++)
+        printf("%d\n",a[i]);
+    printf("%.1f",(float)count);
+    
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
