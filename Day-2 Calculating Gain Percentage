@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    float p=(c-(a+b))*100;
+    p=p/(a+b);
+    printf("%.2f",p);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
