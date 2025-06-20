@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float n,s,t;
+    scanf("%f%f%f",&n,&s,&t);
+    if((s/(n/3600.0))>=t)
+    {
+        printf("No");
+    }
+    else
+        printf("Yes");
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
