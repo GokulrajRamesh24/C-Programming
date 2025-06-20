@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i,j,k;
+    scanf("%d%d%d",&i,&j,&k);
+    if(i>=j && i>=k)
+    {
+        if(i>j && i>k)
+        {
+            printf("Number1 is maximum with value of %.1f",(float)i);
+        }
+        else if(i==j || i==k)
+        {
+            printf("Number3 is maximum with value of %.1f",(float)k);
+        }
+    }
+    else if(j>=i && j>=k)
+    {
+        if(j>i && j>k)
+        {
+            printf("Number2 is maximum with value of %.1f",(float)j);
+        }
+        else if(i==j || j==k)
+        {
+            printf("Number3 is maximum with value of %.1f",(float)k);
+        }
+    }
+    else
+    {
+        if(k>i && j<k)
+        {
+            printf("Number3 is maximum with value of %.1f",(float)k);
+        }
+        else if(i==k || j==k)
+        {
+            printf("Number3 is maximum with value of %.1f",(float)k);
+        }
+    }
+        
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
