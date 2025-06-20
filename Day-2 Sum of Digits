@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,sum=0,q;
+    scanf("%d",&a);
+    int n=a;
+    if(a>=10 && a<=99)
+    {
+        while(a>0)
+        {
+            q=a%10;
+            sum+=q;
+            a/=10;
+        }
+        printf("Sum of Digit %d is %03d",n,sum);
+    }
+    else
+        printf("Invalid Input");
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
