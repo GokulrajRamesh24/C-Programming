@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int h,m,s;
+    scanf("%d%d%d",&h,&m,&s);
+    if(s>=60)
+    {
+        int l=s/60;
+        m+=l;
+        s%=60;
+    }
+    if(m>=60)
+    {
+        int k=m/60;
+        h+=k;
+        m%=60;
+    }
+    printf("Total Number of hours is %d",h);
+    printf("\nTotal Number of minutes is %d",m);
+    printf("\nTotal Number of seconds is %d",s);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
