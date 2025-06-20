@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b;
+    char c;
+    scanf("%d%d\n%c",&a,&b,&c);
+    switch(c)
+    {
+        case '+':
+            printf("Addition of two number is %.1f",(float)a+b);
+            break;
+        case '-':
+            printf("Subtraction of two number is %.1f",(float)a-b);
+            break;
+        case '/':
+            printf("Division of two number is %.1f",(float)a/b);
+            break;
+        case '%':
+            printf("Modulo of two number is %.1f",(float)(a%b));
+            break;
+        case '*':
+            printf("Multiplication of two number is %.1f",(float)a*b);
+            break;
+        default:
+            printf("Invalid Input");         
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
